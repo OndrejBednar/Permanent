@@ -11,9 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03Grades", "03Grades\03Grad
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Arrays", "Arrays\Arrays.csproj", "{34C77124-A817-4FE5-AD73-BE0329D3370F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05Display", "05Display\05Display.csproj", "{F5C87AB5-9773-4021-838B-5BB281259A57}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DisplayHelper", "Display Helper\DisplayHelper.csproj", "{D95D82A0-581E-4096-AE8E-AC7AADBDE2BC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05Display", "05Display\05Display.csproj", "{F5C87AB5-9773-4021-838B-5BB281259A57}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,10 +39,6 @@ Global
 		{F5C87AB5-9773-4021-838B-5BB281259A57}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F5C87AB5-9773-4021-838B-5BB281259A57}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F5C87AB5-9773-4021-838B-5BB281259A57}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D95D82A0-581E-4096-AE8E-AC7AADBDE2BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D95D82A0-581E-4096-AE8E-AC7AADBDE2BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D95D82A0-581E-4096-AE8E-AC7AADBDE2BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D95D82A0-581E-4096-AE8E-AC7AADBDE2BC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -5,20 +5,20 @@ using System.Text;
 
 namespace Arrays
 {
-    class UnlimitedArray : IDynamicArray, IEnumerable
+    class UnlimitedArray<T>: IDynamicArray<T>, IEnumerable<T> where T : class
     {
-        private object[] _array;
+        private T[] _array;
         private readonly int _maxcnt = 10;
         public UnlimitedArray(int maxcnt=10)
         {
-            _array = new object[_maxcnt];
+            _array = new T[_maxcnt];
             _maxcnt = maxcnt;
 
         }
 
-        public static UnlimitedArray operator +(UnlimitedArray first, UnlimitedArray second)
+        public static UnlimitedArray<T> operator +(UnlimitedArray<T> first, UnlimitedArray<T> second)
         {
-            UnlimitedArray result = new UnlimitedArray(first.Length + second.Length);
+            UnlimitedArray<T> result = new UnlimitedArray<T>(first.Count + second.Count);
             uint index = 0;
             foreach (var item in first)
             {
@@ -31,7 +31,7 @@ namespace Arrays
             return result;
         }
 
-        public object this[uint index]
+        public T this[uint index]
         {
             get
             {
@@ -73,9 +73,9 @@ namespace Arrays
         /// </summary>
         /// <param name="oldArray">pole, které bude zvětšeno nebo zmenšeno</param>
         /// <param name="newSize">velikost pole po zvětšení / zmenšení</param>
-        private static void ResizeArray(ref object[] oldArray, uint newSize)
+        private static void ResizeArray(ref T[] oldArray, uint newSize)
         {
-            object[] newArrays = new object[newSize];
+            T[] newArrays = new T[newSize];
             for (int i = 0; i < oldArray.Length; i++)
             {
                 newArrays[i] = oldArray[i];
@@ -83,12 +83,12 @@ namespace Arrays
             oldArray = newArrays;
         }
 
-        public object Get(uint position)
+        public T Get(uint position)
         {
             return _array[position];
         }
 
-        public void Insert(object value, uint position)
+        public void Insert(T value, uint position)
         {
             if (_array.Length <= position) { ResizeArray(ref _array, position+1); }
             if (_array[position] != null)
@@ -109,7 +109,12 @@ namespace Arrays
                 _array[i] = _array[i-1];
             }
         }
-        public IEnumerator GetEnumerator()
+        IEnumerator IEnumerable.GetEnumerator()
+        {
+            return this.GetEnumerator();
+        }
+
+        public IEnumerator<T> GetEnumerator()
         {
             foreach (var item in _array)
             {
@@ -117,17 +122,17 @@ namespace Arrays
             }
         }
 
-        public object Get(int position)
+        public T Get(int position)
         {
             throw new NotImplementedException();
         }
 
-        public object[] GetAll()
+        public T[] GetAll()
         {
             throw new NotImplementedException();
         }
 
-        public void Add(object value)
+        public void Add(T value)
         {
             throw new NotImplementedException();
         }
