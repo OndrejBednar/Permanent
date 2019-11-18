@@ -6,8 +6,8 @@ namespace Robots
 {
     interface IRoboPart
     {
-        virtual string Message { get; }
+        string Message { get; }
         double Consumption { get; }
-        virtual double DeviceConsumption { get; protected set;}
+        double DeviceConsumption { get; set;}
     }
 }

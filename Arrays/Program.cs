@@ -6,8 +6,7 @@ namespace Arrays
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            UnlimitedArray pole = new UnlimitedArray();
+            UnlimitedArray<object> pole = new UnlimitedArray<object>();
             ConsoleKeyInfo result;
             do
             {
@@ -22,7 +21,7 @@ namespace Arrays
                 Console.WriteLine("");
             } while (result.Key == ConsoleKey.A);
 
-            
+
             Console.ReadKey();
         }
     }
