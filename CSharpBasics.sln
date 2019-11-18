@@ -13,6 +13,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Arrays", "Arrays\Arrays.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05Display", "05Display\05Display.csproj", "{F5C87AB5-9773-4021-838B-5BB281259A57}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DisplayHelper", "..\..\CSharpBasics1.1\Display Helper\DisplayHelper.csproj", "{22DAFC5B-D48C-4670-B450-B68203E7B646}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Robots", "Robots\Robots.csproj", "{F1CA2AB9-3F28-430E-A898-391FFCDD41E3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,14 @@ Global
 		{F5C87AB5-9773-4021-838B-5BB281259A57}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F5C87AB5-9773-4021-838B-5BB281259A57}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F5C87AB5-9773-4021-838B-5BB281259A57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22DAFC5B-D48C-4670-B450-B68203E7B646}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22DAFC5B-D48C-4670-B450-B68203E7B646}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22DAFC5B-D48C-4670-B450-B68203E7B646}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22DAFC5B-D48C-4670-B450-B68203E7B646}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1CA2AB9-3F28-430E-A898-391FFCDD41E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1CA2AB9-3F28-430E-A898-391FFCDD41E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1CA2AB9-3F28-430E-A898-391FFCDD41E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1CA2AB9-3F28-430E-A898-391FFCDD41E3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
