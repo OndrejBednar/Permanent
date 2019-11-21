@@ -9,5 +9,6 @@
         void Add(T value);
         int Count { get; }
         int Length { get; }
+        void Fill(T value);
     }
 }

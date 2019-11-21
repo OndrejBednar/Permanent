@@ -4,12 +4,11 @@ using System.Text;
 
 namespace Robots
 {
-    class RoboticPart : IRoboPart
+    abstract class RoboticPart : IRoboPartConsumption
     {
-        public double Consumption => throw new NotImplementedException();
+        public virtual string Message => "General robotic part";
+        public double Consumption {get; }
 
-        public string Message => throw new NotImplementedException();
-
-        public double DeviceConsumption { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public double DeviceConsumption { get;set; }
     }
 }

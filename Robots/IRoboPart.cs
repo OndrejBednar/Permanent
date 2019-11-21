@@ -4,10 +4,9 @@ using System.Text;
 
 namespace Robots
 {
-    interface IRoboPart
+    interface IRoboPartConsumption
     {
-        string Message { get; }
         double Consumption { get; }
-        double DeviceConsumption { get; set;}
+        double DeviceConsumption { get;set;}
     }
 }

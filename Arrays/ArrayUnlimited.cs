@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace Arrays
 {
-    class UnlimitedArray<T> : IDynamicArray<T>, IEnumerable<T> where T : class
+    public class UnlimitedArray<T> : IDynamicArray<T>, IEnumerable<T> where T : class
     {
         private T[] _array;
         private readonly int _maxcnt = 10;
@@ -134,6 +134,15 @@ namespace Arrays
         public void Add(T value)
         {
             throw new NotImplementedException();
+        }
+
+        public void Fill(T value)
+        {
+            for (int i = 0; i < _array.Length; i++)
+            {
+                _array[i] = value;
+            }
+          
         }
     }
 }
