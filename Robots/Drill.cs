@@ -6,8 +6,6 @@ namespace Robots
 {
     class Drill : RoboticPart, IDrill
     {
-        const double DrillCovGalacticConstant = 0.4;
-
         public Drill() : this(12, 1800) { }
         public Drill(int maxSize, int maxRotations)
         {
@@ -19,10 +17,8 @@ namespace Robots
         public int MaxRotations { get; protected set; }
         public int Size { get; protected set; }
         public int Rotations { get; protected set; }
-        public int SetSize(int size) { Size = (size < MaxSize) ? size : MaxSize; return Size; }
-        public int SetRotations(int rotations) { Rotations = (rotations < MaxRotations) ? rotations : MaxRotations; return Rotations; }
 
-        public override string Message => $"Drill set up to {Size} mm and {Rotations} RPM";
+        public override string Message => $"Drill is set up to {Size} mm and {Rotations} RPM";
     }
 }
 

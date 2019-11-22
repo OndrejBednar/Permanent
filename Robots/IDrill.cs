@@ -10,7 +10,5 @@ namespace Robots
         int MaxRotations { get; }
         int Size { get; }
         int Rotations { get; }
-        int SetSize(int size);
-        int SetRotations(int rotations);
     }
 }

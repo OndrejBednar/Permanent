@@ -7,6 +7,6 @@ namespace Robots
     interface IRoboPartConsumption
     {
         double Consumption { get; }
-        double DeviceConsumption { get;set;}
+        double DeviceConsumption { get;protected set;}
     }
 }

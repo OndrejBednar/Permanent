@@ -7,8 +7,7 @@ namespace Robots
     abstract class RoboticPart : IRoboPartConsumption
     {
         public virtual string Message => "General robotic part";
-        public double Consumption {get; }
-
-        public double DeviceConsumption { get;set; }
+        public double Consumption => DeviceConsumption;
+        public double DeviceConsumption { get;protected set; }
     }
 }

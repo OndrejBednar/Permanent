@@ -6,7 +6,7 @@ namespace Robots
 {
     class BasicRoboChasis : RoboticPart
     {
-        public BasicRoboChasis(string name = "základní tělo", double battery = 1000, double consumption = 20)
+        public BasicRoboChasis(string name = "Basic body", double battery = 1000, double consumption = 20)
         {
             Name = name;
             DeviceConsumption = consumption;
@@ -23,6 +23,11 @@ namespace Robots
         public void Install(RoboArm tool)
         {
             Arm = tool;
+        }
+
+        public void RemoveTool()
+        {
+            Arm = null;
         }
     }
 }

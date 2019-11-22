@@ -6,7 +6,7 @@ namespace Robots
     {
         static void Main(string[] args)
         {
-            RoboticPart robot = new BasicRoboChasis("robot1", 10);
+            RoboticPart robot = new BasicRoboChasis("robot1", ,50);
         }
     }
 }
