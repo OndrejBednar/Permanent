@@ -6,12 +6,16 @@ namespace GussTheNumber
     {
         static void Main(string[] args)
         {
-            NumerousSekretator game = new NumerousSekretator();
+            bool guessed = false;
+            NumerousSekretator game = new NumerousSekretator(0,100);
             Console.WriteLine("hádej");
-            while (true)
+            while (guessed == false)
             {
                 int guess = int.Parse(Console.ReadLine());
-                game.Guess(guess);
+                if (game.Guess(guess))
+                {
+                    guessed = true;
+                }
             }
         }
     }

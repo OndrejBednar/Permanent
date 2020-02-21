@@ -1,34 +1,36 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ondbedn018\\source\\repos\\GussTheNumber\\GussTheNumber\\GussTheNumber.csproj": {}
+    "C:\\Users\\Host\\source\\repos\\Permanent\\GussTheNumber\\GussTheNumber\\GussTheNumber.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ondbedn018\\source\\repos\\GussTheNumber\\GussTheNumber\\GussTheNumber.csproj": {
+    "C:\\Users\\Host\\source\\repos\\Permanent\\GussTheNumber\\GussTheNumber\\GussTheNumber.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ondbedn018\\source\\repos\\GussTheNumber\\GussTheNumber\\GussTheNumber.csproj",
+        "projectUniqueName": "C:\\Users\\Host\\source\\repos\\Permanent\\GussTheNumber\\GussTheNumber\\GussTheNumber.csproj",
         "projectName": "GussTheNumber",
-        "projectPath": "C:\\Users\\ondbedn018\\source\\repos\\GussTheNumber\\GussTheNumber\\GussTheNumber.csproj",
-        "packagesPath": "C:\\Users\\ondbedn018\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ondbedn018\\source\\repos\\GussTheNumber\\GussTheNumber\\obj\\",
+        "projectPath": "C:\\Users\\Host\\source\\repos\\Permanent\\GussTheNumber\\GussTheNumber\\GussTheNumber.csproj",
+        "packagesPath": "C:\\Users\\Host\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Host\\source\\repos\\Permanent\\GussTheNumber\\GussTheNumber\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\ondbedn018\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Host\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp3.1"
+          "netcoreapp3.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp3.1": {
+          "netcoreapp3.0": {
             "projectReferences": {}
           }
         },
@@ -39,7 +41,7 @@
         }
       },
       "frameworks": {
-        "netcoreapp3.1": {
+        "netcoreapp3.0": {
           "imports": [
             "net461",
             "net462",
@@ -55,7 +57,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

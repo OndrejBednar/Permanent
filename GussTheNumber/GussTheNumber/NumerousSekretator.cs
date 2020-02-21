@@ -20,22 +20,38 @@ namespace GussTheNumber
 
         public bool Guessed { get; private set; }
 
-        public GameState LastTipState => throw new NotImplementedException();
+        public GameState LastTipState { get; private set; }
 
         public bool Guess(int number)
         {
-            switch (number != Number)
+            if (number > Number)
             {
-                case 1:
-                    LastTipState
-                    break;
+                LastTipState = GameState.IsLess;
+            }
+            if (number < Number)
+            {
+                LastTipState = GameState.IsGreater;
             }
             if (number == Number)
             {
-                TipCounter++;
-                Guessed = true;
+                LastTipState = GameState.IsEqual;
             }
-            TipCounter++;
+            switch (LastTipState)
+            {
+                case GameState.IsGreater:
+                    TipCounter++;
+                    Console.WriteLine("Hledané číslo je větší");
+                    break;
+                case GameState.IsEqual:
+                    TipCounter++;
+                    Console.WriteLine("Dobrá práce uhodl jste !");
+                    Guessed = true;
+                    break;
+                case GameState.IsLess:
+                    TipCounter++;
+                    Console.WriteLine("Hledané číslo je mensí");
+                    break;
+            }
             return Guessed;
         }
     }
