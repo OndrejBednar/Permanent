@@ -6,8 +6,4 @@
     <RootNamespace>_03Grades</RootNamespace>
   </PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\Display Helper\DisplayHelper.csproj" />
-  </ItemGroup>
-
 </Project>

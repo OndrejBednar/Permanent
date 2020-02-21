@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Arrays
+﻿namespace Arrays
 {
     public interface IDynamicArray<T>
     {
@@ -13,5 +9,6 @@ namespace Arrays
         void Add(T value);
         int Count { get; }
         int Length { get; }
+        void Fill(T value);
     }
 }

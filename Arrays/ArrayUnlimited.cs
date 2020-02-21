@@ -1,15 +1,14 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Text;
 
 namespace Arrays
 {
-    class UnlimitedArray<T>: IDynamicArray<T>, IEnumerable<T> where T : class
+    public class UnlimitedArray<T> : IDynamicArray<T>, IEnumerable<T> where T : class
     {
         private T[] _array;
         private readonly int _maxcnt = 10;
-        public UnlimitedArray(int maxcnt=10)
+        public UnlimitedArray(int maxcnt = 10)
         {
             _array = new T[_maxcnt];
             _maxcnt = maxcnt;
@@ -90,7 +89,7 @@ namespace Arrays
 
         public void Insert(T value, uint position)
         {
-            if (_array.Length <= position) { ResizeArray(ref _array, position+1); }
+            if (_array.Length <= position) { ResizeArray(ref _array, position + 1); }
             if (_array[position] != null)
             {
                 ShiftItems(position);
@@ -106,7 +105,7 @@ namespace Arrays
                 {
                     ResizeArray(ref _array, (uint)_array.Length + 1);
                 }
-                _array[i] = _array[i-1];
+                _array[i] = _array[i - 1];
             }
         }
         IEnumerator IEnumerable.GetEnumerator()
@@ -135,6 +134,15 @@ namespace Arrays
         public void Add(T value)
         {
             throw new NotImplementedException();
+        }
+
+        public void Fill(T value)
+        {
+            for (int i = 0; i < _array.Length; i++)
+            {
+                _array[i] = value;
+            }
+          
         }
     }
 }

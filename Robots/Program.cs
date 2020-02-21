@@ -6,7 +6,7 @@ namespace Robots
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            RoboticPart robot = new BasicRoboChasis("robot1", ,50);
         }
     }
 }
