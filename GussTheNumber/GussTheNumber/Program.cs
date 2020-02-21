@@ -17,6 +17,7 @@ namespace GussTheNumber
                     guessed = true;
                 }
             }
+            Console.WriteLine($"Na {game.TipCounter} pokus");
         }
     }
 }
