@@ -8,9 +8,9 @@ namespace GussTheNumber
     {
         static Random rand = new Random();
         int Number;
-        public NumerousSekretator()
+        public NumerousSekretator(int end)
         {
-            Number = rand.Next();
+            Number = rand.Next(end);
         }
         public NumerousSekretator(int start = 1, int end = 10)
         {
@@ -36,22 +36,7 @@ namespace GussTheNumber
             {
                 LastTipState = GameState.IsEqual;
             }
-            switch (LastTipState)
-            {
-                case GameState.IsGreater:
-                    TipCounter++;
-                    Console.WriteLine("Hledané číslo je větší");
-                    break;
-                case GameState.IsEqual:
-                    TipCounter++;
-                    Console.WriteLine("Dobrá práce uhodl jste !");
-                    Guessed = true;
-                    break;
-                case GameState.IsLess:
-                    TipCounter++;
-                    Console.WriteLine("Hledané číslo je mensí");
-                    break;
-            }
+            TipCounter++;
             return Guessed;
         }
     }

@@ -8,13 +8,25 @@ namespace GussTheNumber
         {
             bool guessed = false;
             NumerousSekretator game = new NumerousSekretator(0,100);
-            Console.WriteLine("hádej");
+            Console.WriteLine("hádej náhodné číslo od 0 do 100");
             while (guessed == false)
             {
                 int guess = int.Parse(Console.ReadLine());
                 if (game.Guess(guess))
                 {
                     guessed = true;
+                }
+                switch (game.LastTipState)
+                {
+                    case GameState.IsGreater:
+                        Console.WriteLine("Hledané číslo je větší");
+                        break;
+                    case GameState.IsEqual:
+                        Console.WriteLine("Dobrá práce uhodl jste !");
+                        break;
+                    case GameState.IsLess:
+                        Console.WriteLine("Hledané číslo je mensí");
+                        break;
                 }
             }
             Console.WriteLine($"Na {game.TipCounter} pokus");
