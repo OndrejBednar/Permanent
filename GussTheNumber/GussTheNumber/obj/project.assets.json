@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ondbedn018\\Source\\Repos\\Permanent\\GussTheNumber\\GussTheNumber\\GussTheNumber.csproj",
-      "projectName": "GussTheNumber",
-      "projectPath": "C:\\Users\\ondbedn018\\Source\\Repos\\Permanent\\GussTheNumber\\GussTheNumber\\GussTheNumber.csproj",
+      "projectUniqueName": "C:\\Users\\ondbedn018\\source\\repos\\Permanent\\GussTheNumber\\GussTheNumber\\GuessTheNumber.csproj",
+      "projectName": "GuessTheNumber",
+      "projectPath": "C:\\Users\\ondbedn018\\source\\repos\\Permanent\\GussTheNumber\\GussTheNumber\\GuessTheNumber.csproj",
       "packagesPath": "C:\\Users\\ondbedn018\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ondbedn018\\Source\\Repos\\Permanent\\GussTheNumber\\GussTheNumber\\obj\\",
+      "outputPath": "C:\\Users\\ondbedn018\\source\\repos\\Permanent\\GussTheNumber\\GussTheNumber\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

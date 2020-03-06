@@ -23,13 +23,14 @@ namespace GussTheNumber
                         break;
                     case GameState.IsEqual:
                         Console.WriteLine("Dobrá práce uhodl jste !");
+                        Console.WriteLine($"Na {game.TipCounter} pokus");
                         break;
                     case GameState.IsLess:
-                        Console.WriteLine("Hledané číslo je mensí");
+                        Console.WriteLine("Hledané číslo je menší");
                         break;
                 }
             }
-            Console.WriteLine($"Na {game.TipCounter} pokus");
+
         }
     }
 }
